@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.main {
+    margin: 20px;
+}
+
+.jumbotron {
+    color: white;
+    background-color:rgb(43, 43, 43);
+    border-radius: 0cm;
+}
+
+/*GROUPS*/
+.title {
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+
+.subtitle {
+    color:rgb(32, 32, 32);
+    margin-top: 50px;
+}
+
+.list-group {
+    border-radius: 0cm; 
+}
+
+.list-group-item {
+    background-color:rgb(43, 43, 43);
+    color: white;
+}
+
+/*NAVBAR*/
+.nav-item {
+    background-color: white;
+} 
+
+.nav-link {
+    color:rgb(94, 63, 150);
+}
+
+.nav-item:hover {
+    background-color:rgba(122, 94, 173, 0.733);
+}
+
+.nav-link:hover {
+    color:white;
+}

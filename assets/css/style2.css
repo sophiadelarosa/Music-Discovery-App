@@ -51,7 +51,7 @@ body {
 /*INDEX-SPECIFIC STYLING*/
 
 .card {
-    background-image: url("/images/indexbackground.gif");
+    background-image: url("/assets/images/indexbackground.gif");
     background-size: cover;
     border-radius: 0cm;
     padding: 5%;
@@ -71,3 +71,11 @@ body {
     border-radius: 0cm;
 }
 
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.margin {
+    margin-left: 20px;
+}

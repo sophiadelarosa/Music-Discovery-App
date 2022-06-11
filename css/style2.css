@@ -1,0 +1,73 @@
+body {
+    background-color:rgba(0, 0, 0, 0.89);
+    color: white;
+}
+
+.main {
+    margin: 20px;
+}
+
+/*navbar*/
+.nav-item {
+    background-color: white;
+} 
+
+.nav-link {
+    color:rgb(94, 63, 150);
+}
+
+.nav-item:hover {
+    background-color:rgba(122, 94, 173, 0.733);
+}
+
+.nav-link:hover {
+    color:white;
+}
+
+.btn {
+    border-radius: 0cm;
+    background-color: rgb(94, 63, 150);
+    color: white;
+    border: none;
+    border-radius: 0cm;
+}
+
+.btn:hover {
+    background-color: rgb(143, 118, 190);
+}
+
+.btn {
+    background-color: rgb(94, 63, 150);
+    color: white;
+    border: none;
+    border-radius: 0cm;
+}
+
+.btn:hover {
+    background-color: rgb(143, 118, 190);
+}
+
+
+/*INDEX-SPECIFIC STYLING*/
+
+.card {
+    background-image: url("/images/indexbackground.gif");
+    background-size: cover;
+    border-radius: 0cm;
+    padding: 5%;
+    margin: 20%;
+}
+
+.lead {
+    color: white;
+}
+
+
+/*PROFILE-SPECIFIC STYLING*/
+
+.jumbotron {
+    color: white;
+    background-color:rgb(43, 43, 43);
+    border-radius: 0cm;
+}
+

@@ -28,3 +28,6 @@ https://developer.spotify.com/discover/
 Features: 
 search by genre, country, mood/activity, 
 add lyrics feature, randomizer
+
+Tasks:
+Design, 

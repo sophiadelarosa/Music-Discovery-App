@@ -63,3 +63,7 @@ body {
 .btn:hover {
     background-color: rgb(143, 118, 190);
 }
+
+.footer {
+    padding: 40px;
+}

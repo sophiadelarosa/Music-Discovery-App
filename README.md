@@ -25,6 +25,9 @@ Spotify API
 https://developer.spotify.com/discover/
 
 
+https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features
+
+
 Features: 
 search by genre, country, mood/activity, 
 add lyrics feature, randomizer

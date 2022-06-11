@@ -1,3 +1,5 @@
+/*DISCOVER PAGE STYLING*/
+
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -12,7 +14,7 @@ body {
     border-radius: 0cm;
 }
 
-/*GROUPS*/
+/*search criteria sections*/
 .title {
     font-size: xx-large;
     color: rgb(0, 0, 0);
@@ -33,7 +35,7 @@ body {
     color: white;
 }
 
-/*NAVBAR*/
+/*navbar*/
 .nav-item {
     background-color: white;
 } 
@@ -48,4 +50,16 @@ body {
 
 .nav-link:hover {
     color:white;
+}
+
+.btn {
+    border-radius: 0cm;
+    background-color: rgb(94, 63, 150);
+    color: white;
+    border: none;
+    border-radius: 0cm;
+}
+
+.btn:hover {
+    background-color: rgb(143, 118, 190);
 }

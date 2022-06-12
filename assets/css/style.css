@@ -67,3 +67,20 @@ body {
 .footer {
     padding: 40px;
 }
+
+#lyrics #lyricsButton{
+    text-decoration: none;
+    color: white;
+}
+#lyrics {
+    background-color: black; 
+    margin: auto; 
+    display: flex; 
+    text-align: center;
+    padding: 18px 35px;
+    font-size: 20px;
+}
+
+#lyrics:hover {
+    background-color: gray;
+}

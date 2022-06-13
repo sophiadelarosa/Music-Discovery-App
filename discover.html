@@ -46,15 +46,17 @@
 
         <!--textbox for countries-->
 
-        <p class="lead subtitle">Search top 20 songs worldwide by energy level:</p>
+        <div id="energy">
+            <p class="lead subtitle">Search top 20 songs worldwide by energy level:</p>
 
-        <label for="customRange3" class="form-label"></label>
-        <input type="range" class="form-range" min="0" max="1.0" step="0.1" id="customRange3">
-
-        <div class="space">
-
-
+            <label for="customRange3" class="form-label"></label>
+            <input id="slider" type="range" class="form-range" min="0" max="1.0" step="0.1" id="customRange3">
+    
+            <div class="space">
+                <button id="submit" type="submit" class="btn btn primary"><a href="./results.html">Submit</a></button>
+            </div>
         </div>
+        
         
     </div>
 
@@ -64,5 +66,6 @@
         </footer>
     </div>
   
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

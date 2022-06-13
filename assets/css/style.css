@@ -38,6 +38,7 @@ body {
 /*navbar*/
 .nav-item {
     background-color: white;
+    display: flex;
 } 
 
 .nav-link {
@@ -66,4 +67,9 @@ body {
 
 .footer {
     padding: 40px;
+}
+
+.space {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

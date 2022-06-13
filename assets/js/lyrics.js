@@ -13,7 +13,7 @@ form.addEventListener("submit", e => {
 
 
     if (!searchValue) {
-        alert("Nothing to search");
+        console.log("Nothing to search. Please enter name of an artist or a song!");
     } else {
         beginSearch(searchValue);
     }
@@ -23,6 +23,7 @@ form.addEventListener("submit", e => {
 //The word “async” before a function means that a function always returns a promise
 async function beginSearch(searchValue) {
 //The await operator is used to wait for a Promise 
+//The suggest method is intended to be used by a client application to provide a list of suggested matches as a user enters text in a search box.
     var searchResult = await fetch(`${apiURL}/suggest/${searchValue}`);
     var data = await searchResult.json();
 
@@ -34,6 +35,7 @@ async function beginSearch(searchValue) {
 
 function displayData(data) {
     result.innerHTML =  `<div style="font-size: 30px">Search Results:</div> 
+                        <img src="./assets/images/music for lyrics.png" alt="music note" width="100" height="100">
     <ul class="songs">
       ${data.data
         .map(song=>  `<li> 
@@ -61,7 +63,7 @@ result.addEventListener('click', e=>{
     }
 })
 
-// Get lyrics for song
+// Get lyric`s for song
 async function getLyrics(artist, songTitle) {
     var response = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
     var data = await response.json();

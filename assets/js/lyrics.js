@@ -30,18 +30,19 @@ async function beginSearch(searchValue) {
 }
 
 // Display Search Result
+//The <strong> tag is used to define text with strong importance
 
 function displayData(data) {
-    result.innerHTML = `
+    result.innerHTML =  `<div style="font-size: 30px">Search Results:</div> 
     <ul class="songs">
       ${data.data
-        .map(song=> `<li>
+        .map(song=>  `<li> 
                     <div>
                         <strong>${song.artist.name}</strong> -${song.title} 
                     </div>
-                    <span data-artist="${song.artist.name}" data-songtitle="${song.title}">Get Lyrics</span>
+                    <span style="color: black; font-size: 16px" data-artist="${song.artist.name}" data-songtitle="${song.title}">Get Lyrics</span>
                 </li>`
-        )
+        ) 
         .join('')}
     </ul>
   `;

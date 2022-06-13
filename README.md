@@ -5,11 +5,11 @@ AS A tourist,
 I WANT TO explore music in different countries
 SO THAT I can explore the culture
 
-GIVEN a international music discovery app with form inputs
+GIVEN an international music discovery app with form inputs
 WHEN I search for a song by genre, country and energy level
-THEN I am presented with current top 20 songs of specific country
-WHEN I view current 20 songs of a specific country 
-THEN I have the option to search for the songs lyrics
+THEN I am presented with current top 20 songs of a specific country
+WHEN I view the songs of a specific country 
+THEN I have the option to search for the song's lyrics
 
 
 

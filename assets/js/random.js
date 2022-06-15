@@ -58,7 +58,7 @@ const APIController = (function() {
 
     const _getPlaylistByGenre = async (token, genreId) => {
 
-        const limit = 25;
+        const limit = 5;
         
         const result = await fetch(`https://api.spotify.com/v1/browse/categories/${genreId}/playlists?limit=${limit}`, {
             method: 'GET',
@@ -71,7 +71,7 @@ const APIController = (function() {
 
     const _getTracks = async (token, tracksEndPoint) => {
 
-        const limit = 25;
+        const limit = 5;
 
         const result = await fetch(`${tracksEndPoint}?limit=${limit}`, {
             method: 'GET',

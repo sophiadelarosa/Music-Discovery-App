@@ -7,10 +7,8 @@ var apiURL = "https://api.lyrics.ovh";
 // Get Search Value
 form.addEventListener("submit", e => {
     e.preventDefault();
-
 //  .trim function removes the whitespace from both the ends
     searchValue = search.value.trim();
-
 
     if (!searchValue) {
         console.log("Nothing to search. Please enter name of an artist or a song!");
@@ -18,6 +16,13 @@ form.addEventListener("submit", e => {
         beginSearch(searchValue);
     }
 })
+// changed the style of the search bar
+search.addEventListener('click', function onClick(event) {
+    search.style.backgroundColor = 'gray';
+    search.style.color = 'white';
+    search.style.fontSize = '20px';
+  });
+
 
 // Search function
 //The word “async” before a function means that a function always returns a promise
@@ -67,10 +72,12 @@ result.addEventListener('click', e=>{
 async function getLyrics(artist, songTitle) {
     var response = await fetch(`${apiURL}/v1/${artist}/${songTitle}`);
     var data = await response.json();
-  
+
+  //The replace() method returns a new string with some or all matches of a pattern replaced by a replacement. 
+  //In order to remove line breaks from text we must deal with all three types of line breaks (Windows, Linux or Apple)
     var lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>');
   
-    result.innerHTML = `<h2><strong>${artist}</strong> - ${songTitle}</h2>
+    result.innerHTML = `<h1 style="color: black; font-size: 30px"><strong>&#127908; ${artist}</strong> - ${songTitle} &#127908;</h1>
     <p>${lyrics}</p>`;
   
   }

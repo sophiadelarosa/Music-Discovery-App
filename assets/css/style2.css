@@ -77,5 +77,11 @@ body {
 }
 
 .margin {
-    margin-left: 20px;
+    margin: 20px;
+}
+
+.title {
+    font-size: xx-large;
+    color: white;
+    margin-left: 10px;
 }

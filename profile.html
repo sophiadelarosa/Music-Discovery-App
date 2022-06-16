@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.scss"/>
         <link rel="stylesheet" href="./assets/css/style2.css"/>
+        
 
         <title>Profile</title>
     </head>
@@ -22,28 +24,43 @@
         </div>
 
         <h1 class="display-4 margin">Your Profile</h1>
-            <hr class="my-4">
+        <hr class="my-4">
 
-        <div class="main flex">
+        <div class="flex margin profile-pic">
+            <img src="./assets/images/defaultprofileimage.png" id="output" class="output" width="200" />
 
-            <img src="/assets/images/placeholderimage.jpg" class="rounded float-start" alt="...">
             <form class="row row-cols-lg-auto g-3 align-items-center">
                 <div class="margin col-8">
                     <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
                     <div class="input-group">
                         <div class="input-group-text">@</div>
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                        <input type="text" class="username form-control" id="username" placeholder="Username">
                     </div>
                 </div>
     
                 <div class="col-12">
-                    <button type="submit" class="margin btn btn-primary">Save</button>
+                    <button id="save" type="submit" class="margin btn btn-primary">Save</button>
                 </div>
             </form>
         </div>
 
-        <p class="lead margin">Your favorites:</p>
-       
+        <div class="margin">
+            <label class="-label" for="file">
+                <span>Change Image:</span>
+          </label>
+          <input id="file" type="file" onchange="loadFile(event)"/> 
+        </div>
+            
+        <div class="main margin">
+            <h1 class="display-4 title">Your favorites:</h1>
+
+
+
+        </div>
+        
+
+
+       <script src="./assets/js/script.js"></script>
     </body>
 
 </html>

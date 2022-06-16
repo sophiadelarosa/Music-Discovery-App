@@ -29,36 +29,37 @@
         <div class="flex margin profile-pic">
             <img src="./assets/images/defaultprofileimage.png" id="output" class="output" width="200" />
 
-            <form class="row row-cols-lg-auto g-3 align-items-center">
-                <div class="margin col-8">
-                    <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-                    <div id="usernamebox" class="input-group">
-                        <div class="input-group-text">@</div>
-                        <input type="text" class="username form-control" id="username" placeholder="Username">
-                    </div>
-                </div>
-    
-                <div class="col-12">
-                    <button id="save" type="submit" class="margin btn btn-primary">Save</button>
-                </div>
-            </form>
-        </div>
-
-        <div class="margin">
-            <label class="-label" for="file">
-                <span>Change Image:</span>
-          </label>
-          <input id="file" type="file" onchange="loadFile(event)"/> 
-        </div>
-            
-        <div class="main margin">
-            <h1 class="display-4 title">Your favorites:</h1>
-
-
-
+            <div class="input-group mb-3 col-md-5">
+                <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Recipient's username" aria-describedby="save">
+                <button id="save" class="height btn btn-outline-secondary" type="button">Save</button>
+            </div>
         </div>
         
+        <div class="margin">
+            <label class="" for="file">
+                <span>Change Image:</span>
+            </label>
+            <input id="file" type="file" onchange="loadFile(event)"/> 
+        </div>
+        
+        <br />
+        <br />
+        <div class="main margin">
+            <h1 class="display-4 title">Your favorites:</h1>
+        </div>
 
+        <div id="favorites">
+
+        <!-- Favorite button for results page that saves a result in local storage  -->
+        <!-- pull key(song title/artist) and value (url) from local storage  -->
+        <!-- Display key and value in favorites div --> 
+
+        <button id="song" type="button" class="margin btn btn-outline-dark"><a id="link" href="#">Song by Artist</a></button>
+
+
+
+
+        </div>
 
        <script src="./assets/js/script.js"></script>
     </body>

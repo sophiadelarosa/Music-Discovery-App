@@ -33,11 +33,34 @@ function saveProfile (e) {
 
 //let userName = document.getElementById("username").value;
 
-if(localStorage.getItem('username') != null) {
-    console.log(localStorage.getItem('username'));
-    let text = localStorage.getItem('username');
-    user = text;
-};
 
+//function to display username back into textbox
+function display (e) {
+    e.preventDefault();
+
+    let userNameEl = document.getElementById("username").input;
+
+    if(localStorage.getItem('username') != null) {
+        console.log(localStorage.getItem('username'));
+        userNameEl = localStorage.getItem('username');
+    };
+}
+
+//profile save button event listener
 saveButton.addEventListener('click', saveProfile);
+
+//function for favorites button to save to local storage
+
+function saveFav () {
+
+}
+
+
+//function to display song info into button
+//song title, artist go to innerHTML text
+//url is put into a tag href
+
+function displayFav () {
+
+}
 

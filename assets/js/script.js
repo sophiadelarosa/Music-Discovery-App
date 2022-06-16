@@ -17,36 +17,27 @@ var loadFile = function (event) {
 
 //SAVE USERNAME AND PICTURE INFORMATION
 let saveButton = document.getElementById("save");
-
+let user = document.getElementById("username").value;
 
 //function for save button
-function saveProfile () {
+function saveProfile (e) {
+    e.preventDefault();
     //establishing variables for the function
     let profilePic = document.getElementById("output");
     let userName = document.getElementById("username").value;
     let profileInfo = " " + profilePic + " " + userName;
 
-    localStorage.setItem('userName', userName);
-
-    //if there is nothing saved at the start then save an empty array
-    if(localStorage.getItem('userName') === null) {
-        localStorage.setItem('userName', '[]');
-    }
-    
-    //get old leaderboard item and slap it to the new data
-    //let oldLeaderboardItem = JSON.parse(localStorage.getItem('leaderboardItem'));
-    //oldLeaderboardItem.push(leaderboardItem);
-
-    //save the old and new leaderboard item in local storage
-    //localStorage.setItem('leaderboardItem', JSON.stringify(oldLeaderboardItem));
-
-    //if local storage profileInfo is not empty, show contents
-    else (
-        userName = (localStorage.getItem(userName))
-    );
-
-
+    localStorage.setItem('username', userName);
+    console.log(localStorage.getItem('username'));
 }
+
+//let userName = document.getElementById("username").value;
+
+if(localStorage.getItem('username') != null) {
+    console.log(localStorage.getItem('username'));
+    let text = localStorage.getItem('username');
+    user = text;
+};
 
 saveButton.addEventListener('click', saveProfile);
 

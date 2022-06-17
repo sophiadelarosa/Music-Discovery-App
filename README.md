@@ -20,36 +20,3 @@ Here is a screenshot of the International Music Discovery - Lyrics:
 
 <img width="500" alt="Screen Shot 2022-06-17 at 5 36 46 PM" src="https://user-images.githubusercontent.com/100814403/174321592-8a40b00f-520e-4915-9bb7-516c8c74695e.png">
 
-
-
-
-
-
-
-
-
-
-Spotify Charts
-https://rapidapi.com/justoverclockl/api/spotify-charts/
-
-
-Spotify Scraper 
-https://rapidapi.com/DataFanatic/api/spotify-scraper/
-
-
-30,000 radio stations and music charts
-https://rapidapi.com/maxime.maisonneuve/api/30-000-radio-stations-and-music-charts
-
-Spotify API
-https://developer.spotify.com/discover/
-
-
-https://developer.spotify.com/documentation/web-api/reference/#/operations/get-several-audio-features
-
-
-Features: 
-search by genre, country, mood/activity, 
-add lyrics feature, randomizer
-
-Tasks:
-Design, 

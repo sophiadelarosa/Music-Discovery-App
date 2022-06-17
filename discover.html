@@ -22,6 +22,7 @@
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link" href="./profile.html">Profile</a>
+                <a class="nav-link" href="./randomizer.html">Random</a>
             </li>
         </ul>
     </div>
@@ -46,11 +47,27 @@
 
         <!--textbox for countries-->
 
-        <div id="energy">
-            <p class="lead subtitle">Search top 20 songs worldwide by energy level:</p>
+        <p class="lead subtitle">Search top 20 songs worldwide by energy level:</p>
 
-            <label for="customRange3" class="form-label"></label>
+        <label for="customRange3" class="form-label"></label>
+        <input type="range" class="form-range" min="0" max="1.0" step="0.1" id="customRange3">
+        <label for="customRange3" class="form-label"></label>
             <input id="slider" type="range" class="form-range" min="0" max="1.0" step="0.1" id="customRange3">
+
+        <div class="space">
+        <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action">Activity</button>
+            <button type="button" class="list-group-item list-group-item-action">Activity</button>
+            <button type="button" class="list-group-item list-group-item-action">Activity</button>
+            <button type="button" class="list-group-item list-group-item-action">Activity</button>
+        </div>
+        <br>
+        <button id =lyrics type="button" class="btn btn-dark">
+            <a id= lyricsButton href="./lyrics.html" target=”_blank”>&#127908;Click here to search for the song/artist lyrics&#127908;</a>
+        </button>
+
+
+            
     
             <div class="space">
                 <button id="submit" type="submit" class="btn btn primary"><a href="./results.html">Submit</a></button>

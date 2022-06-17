@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Randomizer</title>
+  </head>
+
+  <body>
+    <!--Header/jumbotron-->
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to IMDA</h1>
+      <p class="lead">The international music discovery app.</p>
+      <hr class="my-4" />
+      <!--navbar-->
+      <ul class="nav justify-content-beginning">
+        <li class="nav-item">
+          <a class="nav-link back-button" href="./discover.html">Back</a>
+        </li>
+      </ul>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="./profile.html">Profile</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main"></div>
+
+    <!-- <div class="randomSearchContainer">
+      <h1>Not sure what you want? Try the random selector!</h1>
+      <button id="randomizerSea">Feeling Lucky!</button>
+    </div>
+
+    <div class="resultsContainer" id="randomizerRes" hidden>
+      <span id="songTitle"></span>
+
+      <button id="randomizerSea">Feeling luckier this time!</button>
+    </div> -->
+
+    <div class="container">
+      <form action="">
+        <input type="hidden" id="hidden_token" />
+        <div class="col-sm-6 form-group row mt-4 px-0">
+          <label for="Genre" class="form-label col-sm-2">Genre:</label>
+          <select
+            name=""
+            id="select_genre"
+            class="form-control form-control-sm col-sm-10"
+          >
+            <option>Select...</option>
+          </select>
+        </div>
+        <div class="col-sm-6 form-group row px-0">
+          <label for="Genre" class="form-label col-sm-2">Playlists:</label>
+          <select
+            name=""
+            id="select_playlist"
+            class="form-control form-control-sm col-sm-10"
+          >
+            <option>Select...</option>
+          </select>
+        </div>
+        <div class="col-sm-6 row form-group px-0">
+          <button
+            type="submit"
+            id="btn_submit"
+            class="btn btn-success col-sm-12"
+          >
+            Search
+          </button>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-sm-6 px-0">
+          <div class="list-group song-list"></div>
+        </div>
+        <div class="offset-md-1 col-sm-4" id="song-detail"></div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <script src="./assets/js/random.js"></script>
+  </footer>
+</html>

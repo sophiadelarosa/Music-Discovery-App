@@ -12,12 +12,16 @@ var slider = document.getElementById('slider');
 var loadFile = function (event) {
     var image = document.getElementById("output");
     image.src = URL.createObjectURL(event.target.files[0]);
-    };
-    
+
+    // localStorage.setItem('imageURL', JSON.stringify(event.target.files[0]));
+    // const savedURL =JSON.parse(localStorage.getItem('imageURL'));
+    // document.getElementById('output').innerHTML=`
+    // <img src='${savedURL}'>`
+}
 
 //SAVE USERNAME AND PICTURE INFORMATION
 let saveButton = document.getElementById("save");
-let user = document.getElementById("username").value;
+let userName = document.getElementById("username").value;
 
 //function for save button
 function saveProfile (e) {
@@ -27,27 +31,17 @@ function saveProfile (e) {
     let userName = document.getElementById("username").value;
     let profileInfo = " " + profilePic + " " + userName;
 
-    localStorage.setItem('username', userName);
-    console.log(localStorage.getItem('username'));
+
+    localStorage.setItem('username', JSON.stringify(userName));
+    const savedUserName =JSON.parse(localStorage.getItem('username'));
+    document.getElementById('localStorage').innerHTML=`<h4>${savedUserName}</h4>`;
+
+    console.log("*****", document.getElementById("file"))
+    console.log("****", profilePic.img)
+
 }
 
-//let userName = document.getElementById("username").value;
-
-
-//function to display username back into textbox
-function display (e) {
-    e.preventDefault();
-
-    let userNameEl = document.getElementById("username").input;
-
-    if(localStorage.getItem('username') != null) {
-        console.log(localStorage.getItem('username'));
-        userNameEl = localStorage.getItem('username');
-    };
-}
-
-//profile save button event listener
-saveButton.addEventListener('click', saveProfile);
+saveButton.onclick =saveProfile
 
 //function for favorites button to save to local storage
 

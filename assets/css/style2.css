@@ -77,5 +77,24 @@ body {
 }
 
 .margin {
-    margin-left: 20px;
+    margin: 20px;
+}
+
+.title {
+    font-size: xx-large;
+    color: white;
+    margin-left: 10px;
+}
+
+.height {
+    max-height: 39px;
+}
+
+.underline {
+    border-bottom: 1px solid white;
+    max-width: 30%;
+}
+
+.form-control {
+    border-radius: 0cm;
 }

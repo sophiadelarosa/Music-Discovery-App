@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.scss"/>
         <link rel="stylesheet" href="./assets/css/style2.css"/>
+        
 
         <title>Profile</title>
     </head>
@@ -21,23 +23,47 @@
             </ul>
         </div>
 
-        <div class="main flex">
-            <img src="/images/placeholderimage.jpg" class="rounded float-start" alt="...">
-            <form class="row row-cols-lg-auto g-3 align-items-center">
-                <div class="margin col-8">
-                    <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-                    <div class="input-group">
-                        <div class="input-group-text">@</div>
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
-                    </div>
-                </div>
-    
-                <div class="col-12">
-                    <button type="submit" class="margin btn btn-primary">Save</button>
-                </div>
-            </form>
+        <h1 class="display-4 margin underline">Your Profile</h1>
+        <div class="margin" id="nameFromStorage"></div>
+        <hr class="my-4">
+
+        <div class="flex margin profile-pic">
+            <img src="./assets/images/defaultprofileimage.png" id="output" class="output" width="200" />
+
+            <div class="input-group mb-3 col-md-5">
+                <input id="username" type="text" class="form-control" placeholder="Username" aria-label="Recipient's username" aria-describedby="save">
+                <button id="save" class="height btn btn-outline-secondary" type="button">Save</button>
+            </div>
         </div>
-       
+        
+        <div class="margin">
+            <label class="" for="file">
+                <span>Change Image:</span>
+            </label>
+            <input id="file" type="file" onchange="loadFile(event)"/> 
+        </div>
+        
+        <br />
+        <br />
+
+        <div class="main margin">
+            <h1 class="display-4 title">Your favorites:</h1>
+        </div>
+
+        <div id="favorites">
+
+        <!-- Favorite button for results page that saves a result in local storage  -->
+        <!-- pull key(song title/artist) and value (url) from local storage  -->
+        <!-- Display key and value in favorites div --> 
+
+        <button id="song" type="button" class="margin btn btn-outline-dark"><a id="link" href="{value}">{key}</a></button>
+
+
+
+
+        </div>
+
+       <script src="./assets/js/script.js"></script>
     </body>
 
 </html>

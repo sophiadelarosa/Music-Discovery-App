@@ -89,3 +89,12 @@ body {
 .height {
     max-height: 39px;
 }
+
+.underline {
+    border-bottom: 1px solid white;
+    max-width: 30%;
+}
+
+.form-control {
+    border-radius: 0cm;
+}

@@ -23,7 +23,8 @@
             </ul>
         </div>
 
-        <h1 class="display-4 margin">Your Profile</h1>
+        <h1 class="display-4 margin underline">Your Profile</h1>
+        <div class="margin" id="nameFromStorage"></div>
         <hr class="my-4">
 
         <div class="flex margin profile-pic">
@@ -44,9 +45,6 @@
         
         <br />
         <br />
-        <div id="localStorage">
-
-        </div>
 
         <div class="main margin">
             <h1 class="display-4 title">Your favorites:</h1>
@@ -58,7 +56,7 @@
         <!-- pull key(song title/artist) and value (url) from local storage  -->
         <!-- Display key and value in favorites div --> 
 
-        <button id="song" type="button" class="margin btn btn-outline-dark"><a id="link" href="#">Song by Artist</a></button>
+        <button id="song" type="button" class="margin btn btn-outline-dark"><a id="link" href="{value}">{key}</a></button>
 
 
 

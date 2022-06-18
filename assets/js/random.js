@@ -149,7 +149,7 @@ const UIController = (function () {
     },
 
     // need method to create a track list group item
-    createTrack(id, name) {
+    createTrack(id, name, idNumber) {
       const html = `<a href="#" class="list-group-item list-group-item-action list-group-item-light" id="${id}">${name}</a>`;
       document
         .querySelector(DOMElements.divSonglist)
@@ -166,14 +166,20 @@ const UIController = (function () {
             <div class="row col-sm-12 px-0">
                 <img src="${img}" alt="">        
             </div>
-            <div class="row col-sm-12 px-0">
+            <div id="title" class="row col-sm-12 px-0">
                 <label for="Genre" class="form-label col-sm-12">${title}:</label>
             </div>
-            <div class="row col-sm-12 px-0">
+            <div id="artist" class="row col-sm-12 px-0">
                 <label for="artist" class="form-label col-sm-12">By ${artist}:</label>
             </div>            
             `;
 
+            //SOPHIA: adding song info to local storage
+            let songInfo = (title + " by " + artist);
+            console.log(songInfo);
+            localStorage.setItem('songs', (JSON.stringify(songInfo)));
+            //SOPHIA end
+                        
       detailDiv.insertAdjacentHTML("beforeend", html);
     },
 
@@ -251,7 +257,7 @@ const APPController = (function (UICtrl, APICtrl) {
     // get the list of tracks
     const tracks = await APICtrl.getTracks(token, tracksEndPoint);
     // create a track list item
-    tracks.forEach((el) => UICtrl.createTrack(el.track.href, el.track.name));
+    tracks.forEach((el) => UICtrl.createTrack(el.track.href, el.track.name, el));
   });
 
   // create song selection click event listener
@@ -285,3 +291,5 @@ const APPController = (function (UICtrl, APICtrl) {
 
 // will need to call a method to load the genres on page load
 APPController.init();
+
+

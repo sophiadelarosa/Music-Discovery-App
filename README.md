@@ -32,3 +32,5 @@ Discover page:
 Profile page:
 ![Profile page of the app.](./assets/images/profile.png)
 
+Playlist page:
+![Playlist selection to favorite songs in the app.](./assets/images/playlist.png)

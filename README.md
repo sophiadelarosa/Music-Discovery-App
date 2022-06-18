@@ -13,6 +13,9 @@ THEN I have the option to search for the song's lyrics
 
 Here is the URL of the application:
 
+https://sophiadelarosa.github.io/group-project/
+
+
 Here is a screenshot of the International Music Discovery - Lyrics:
 
 <img width="500" alt="Screen Shot 2022-06-17 at 5 36 53 PM" src="https://user-images.githubusercontent.com/100814403/174321561-1d3364cb-f415-4a87-953f-84e681e7cc95.png">

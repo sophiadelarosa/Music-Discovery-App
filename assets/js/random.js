@@ -1,6 +1,6 @@
 var randomSearch = document.querySelector("#randomizerSea");
 
-var apiKeyRandom = "";
+// var apiKeyRandom = "";
 
 // randomSearch.addEventListener('click', function() {
 //     fetch('https://spotify23.p.rapidapi.com/charts/')
@@ -41,7 +41,7 @@ const APIController = (function () {
 
   const _getGenres = async (token) => {
     const result = await fetch(
-      `https://api.spotify.com/v1/browse/categories?locale=sv_US`,
+      `https://api.spotify.com/v1/browse/categories?locale=en_US`,
       {
         method: "GET",
         headers: { Authorization: "Bearer " + token },
@@ -68,7 +68,7 @@ const APIController = (function () {
   };
 
   const _getTracks = async (token, tracksEndPoint) => {
-    const limit = 5;
+    const limit = 20;
 
     const result = await fetch(`${tracksEndPoint}?limit=${limit}`, {
       method: "GET",
@@ -171,10 +171,7 @@ const UIController = (function () {
             </div>
             <div id="artist" class="row col-sm-12 px-0">
                 <label for="artist" class="form-label col-sm-12">By ${artist}:</label>
-            </div>
-            <div class="alert alert-primary" role="alert">
-              This song was added to your favorites — <a href="./profile.html">check it out!</a>
-            </div>
+            </div>            
             `;
 
             //SOPHIA: adding song info to local storage
@@ -278,13 +275,15 @@ const APPController = (function (UICtrl, APICtrl) {
     UICtrl.createTrackDetail(
       track.album.images[2].url,
       track.name,
-      track.artists[0].name
+      track.artists[0].name,
+      track.external_urls.url,
+      console.log(track)
     );
   });
 
   return {
     init() {
-      console.log("App is starting");
+      console.log("Lets get started");
       loadGenres();
     },
   };

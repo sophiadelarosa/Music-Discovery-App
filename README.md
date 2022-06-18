@@ -13,6 +13,9 @@ THEN I have the option to search for the song's lyrics
 
 Here is the URL of the application:
 
+https://sophiadelarosa.github.io/group-project/
+
+
 Here is a screenshot of the International Music Discovery - Lyrics:
 
 Page 1:

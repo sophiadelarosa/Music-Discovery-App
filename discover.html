@@ -22,7 +22,7 @@
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <a class="nav-link" href="./profile.html">Profile</a>
-                <a class="nav-link" href="./randomizer.html">Random</a>
+                <a class="nav-link" href="./randomizer.html">Playlist</a>
             </li>
         </ul>
     </div>
@@ -30,50 +30,33 @@
     <!-- overwrite/use div class=main to display results or new page?-->
     <!-- results need show lyrics feature-->
     <div class="main">
+        <input type="hidden" id='hidden_token'>
         <!--music search form-->
         <h1 class="display-4 title">Let's Get Started</h1>
-        <p class="lead subtitle">Search top 20 songs worldwide by genre:</p>
-
+        <p class="lead subtitle">Select a Genre:</p>
         <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action">Genre</button>
-            <button type="button" class="list-group-item list-group-item-action">Genre</button>
-            <button type="button" class="list-group-item list-group-item-action">Genre</button>
-            <button type="button" class="list-group-item list-group-item-action">Genre</button>
+            <select name="" id="select_genre" class="form-control form-control-sm col-sm-10">
+                <option>Select...</option>                    
+            </select>
         </div>
 
-        <!--submit at end of each section?-->
-
-        <p class="lead subtitle">Search top 20 songs worldwide by country:</p>
-
-        <!--textbox for countries-->
-
-        <p class="lead subtitle">Search top 20 songs worldwide by energy level:</p>
-
-        <label for="customRange3" class="form-label"></label>
-        <input type="range" class="form-range" min="0" max="1.0" step="0.1" id="customRange3">
-        <label for="customRange3" class="form-label"></label>
-            <input id="slider" type="range" class="form-range" min="0" max="1.0" step="0.1" id="customRange3">
-
-        <div class="space">
+        <p class="lead subtitle">Select a Country:</p>
         <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action">Activity</button>
-            <button type="button" class="list-group-item list-group-item-action">Activity</button>
-            <button type="button" class="list-group-item list-group-item-action">Activity</button>
-            <button type="button" class="list-group-item list-group-item-action">Activity</button>
+            <select name="" id="select_country" class="form-control form-control-sm col-sm-10">
+                <option>Select...</option>                    
+            </select>
         </div>
+
+        <div class="song-list list-group"></div>
+
+        <br>
+              
+        <button id="btn_submit" type="submit" class="btn btn primary">Submit</button>
+        <br>
         <br>
         <button id =lyrics type="button" class="btn btn-dark">
             <a id= lyricsButton href="./lyrics.html" target=”_blank”>&#127908;Click here to search for the song/artist lyrics&#127908;</a>
-        </button>
-
-
-            
-    
-            <div class="space">
-                <button id="submit" type="submit" class="btn btn primary"><a href="./results.html">Submit</a></button>
-            </div>
-        </div>
-        
+        </button>   
         
     </div>
 
@@ -84,5 +67,6 @@
     </div>
   
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/country.js"></script>
   </body>
 </html>

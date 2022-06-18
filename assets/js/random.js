@@ -171,6 +171,9 @@ const UIController = (function () {
             </div>
             <div id="artist" class="row col-sm-12 px-0">
                 <label for="artist" class="form-label col-sm-12">By ${artist}:</label>
+            </div>
+            <div class="alert alert-light" role="alert">
+            This track has been added to your favorites—<a href="./profile.html">check it out!</a>
             </div>            
             `;
 

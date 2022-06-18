@@ -109,10 +109,7 @@ const UIController = (function() {
         // need method to create a track list group item 
         createTrack(artistName, name, url) {
             const html = 
-            `<div class = row>
-            <a href="${url}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action list-group-item-light col-9">${name}-${artistName}</a>
-            <button class=type=button id=${url}>Favorite</button>
-            </div>`;
+            `<a href="${url}" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action list-group-item-light col-9">${name}-${artistName}</a>`;
             document.querySelector(DOMElements.divSonglist).insertAdjacentHTML('beforeend', html);
         },
         

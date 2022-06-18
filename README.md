@@ -24,6 +24,9 @@ Page 1:
 Discover page:
 ![Discover page of the app.](./assets/images/discover.png)
 
+<img width="500" alt="Screen Shot 2022-06-18 at 4 56 54 PM" src="https://user-images.githubusercontent.com/100814403/174441960-662722ec-942d-4439-bc3e-73df7563bb53.png">
+
+
 <img width="500" alt="Screen Shot 2022-06-17 at 5 36 53 PM" src="https://user-images.githubusercontent.com/100814403/174321561-1d3364cb-f415-4a87-953f-84e681e7cc95.png">
 
 
